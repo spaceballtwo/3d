@@ -6,7 +6,14 @@
         "arcade-text": "github:microsoft/arcade-text#v1.3.0",
         "pxt-raycasting": "github:aqeeaqee/pxt-raycasting#v0.3.18",
         "Makey Makey Keymappings": "github:joylabz/makeymakey-makecode-arcade-extension#1.0.3",
-        "sevenseg": "*"
+        "sevenseg": "*",
+        "multiplayer": "*",
+        "arcade-tile-util": "github:microsoft/arcade-tile-util#v1.2.0",
+        "sprite-scaling": "*",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "radio-broadcast": "*",
+        "light": "*",
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
     },
     "files": [
         "main.blocks",
