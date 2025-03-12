@@ -6,6 +6,16 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, l
         kcp += 1
     })
 })
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (controller.right.isPressed()) {
+        timer.after(500, function () {
+            Render.moveWithController(8, 2, 0)
+            timer.after(1000, function () {
+                Render.moveWithController(5, 2, 0)
+            })
+        })
+    }
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     Render.moveWithController(7, 0, 0)
 })
@@ -29,7 +39,7 @@ game.onUpdateInterval(10, function () {
 })
 forever(function () {
     if (mySprite.tileKindAt(TileDirection.Center, assets.tile`myTile2`)) {
-        if (kcp == 1) {
+        if (kcp == 2) {
             myCounter.count += 1
             lap += 1
             pause(1000)
