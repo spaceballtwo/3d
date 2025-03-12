@@ -15,6 +15,14 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
             })
         })
     }
+    if (controller.left.isPressed()) {
+        timer.after(500, function () {
+            Render.moveWithController(8, 2, 0)
+            timer.after(1000, function () {
+                Render.moveWithController(5, 2, 0)
+            })
+        })
+    }
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     Render.moveWithController(7, 0, 0)
